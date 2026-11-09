@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f8f9ff;
+            color: #0d1c2e;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #c4c5d5;
+        }
+
+        header h2 {
+            color: #00288e;
+        }
+
+        nav a {
+            color: #444653;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #00288e;
+        }
+
+        .hero {
+            background: #00288e;
+            color: #ffffff;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .about-box {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .about-box h2 {
+            color: #00288e;
+            margin-bottom: 12px;
+        }
+
+        .details {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .detail {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 230px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .detail h3 {
+            color: #00288e;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #444653;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Student Accommodation</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="reservation.html">Reservation</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>About Us</h1>
+        <p>Making it easier for students to find and reserve suitable accommodation.</p>
+    </section>
+
+    <main class="content">
+        <section class="about-box">
+            <h2>Who We Are</h2>
+            <p>
+                We provide a simple platform that helps students view available
+                accommodation and make room reservations. The platform is designed
+                to make the process easier, clearer and more organised.
+            </p>
+        </section>
+
+        <section class="about-box">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to make student accommodation searching and booking
+                easier by providing clear information about available hostels,
+                rooms and reservation details.
+            </p>
+        </section>
+
+        <div class="details">
+            <section class="detail">
+                <h3>Our Goal</h3>
+                <p>To help students find accommodation that suits their needs and budget.</p>
+            </section>
+
+            <section class="detail">
+                <h3>What We Offer</h3>
+                <p>Hostel information, room details and a simple reservation process.</p>
+            </section>
+
+            <section class="detail">
+                <h3>Our Values</h3>
+                <p>Simplicity, clear information and a better student accommodation experience.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Accommodation. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
