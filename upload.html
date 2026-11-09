@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List New Student Accommodation | Rent Smart</title>
+  <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="logo">Rent <span>Smart</span></a>
+    <ul class="nav-links">
+      <li><a href="#">Find Rooms</a></li>
+      <li><a href="#">How it works</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">List Property / Landlord Portal</a></li>
+      <li><a href="#">Notifications</a></li>
+      <li><a href="#">Profile photo</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="page-head">
+      <div>
+        <h1>List New Student Accommodation</h1>
+        <p>Publish verified student rooms near Laws Campus. Every listing is audited against our Anti-Double Booking Sentinel and linked to PayChangu for secure payments.</p>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn">Save draft</button>
+        <button type="button" class="btn">Preview listing</button>
+      </div>
+    </header>
+
+    <ol class="steps" aria-label="Listing progress">
+      <li class="step is-active"><span class="step-num">1</span>Hostel and Location</li>
+      <li class="step"><span class="step-num">2</span>Room Blueprint</li>
+      <li class="step"><span class="step-num">3</span>Verification Process</li>
+      <li class="step"><span class="step-num">4</span>Pricing and Payment Setup</li>
+    </ol>
+
+    <form>
+      <section class="panel">
+        <h2>1. Hostel and Location</h2>
+        <div class="grid">
+          <div class="field">
+            <label for="hostel">Hostel / Property Name</label>
+            <input type="text" id="hostel" name="hostel">
+          </div>
+          <div class="field">
+            <label for="proximity">Proximity and Walking Metric</label>
+            <input type="text" id="proximity" name="proximity">
+          </div>
+          <div class="field">
+            <label for="room-number">Room Number</label>
+            <input type="text" id="room-number" name="room-number">
+          </div>
+          <div class="field">
+            <label for="zone">Primary Campus Zone</label>
+            <input type="text" id="zone" name="zone">
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>2. Room Blueprint</h2>
+
+        <fieldset>
+          <legend>Room type</legend>
+          <div class="type-grid">
+            <label class="type-card">
+              <input type="radio" name="room-type" value="studio">
+              <h4>Executive Studio</h4>
+              <p>Single occupant</p>
+              <p>Private kitchenette</p>
+            </label>
+            <label class="type-card">
+              <input type="radio" name="room-type" value="single">
+              <h4>Single En-Suite</h4>
+              <p>Single occupant</p>
+              <p>Private bath</p>
+            </label>
+            <label class="type-card">
+              <input type="radio" name="room-type" value="double">
+              <h4>Shared Double</h4>
+              <p>2 bedspaces</p>
+              <p>Shared bath</p>
+            </label>
+            <label class="type-card">
+              <input type="radio" name="room-type" value="quad">
+              <h4>Shared Quad</h4>
+              <p>2-4 bedspaces</p>
+              <p>Budget rate</p>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Bathroom</legend>
+          <div class="choice-row">
+            <label class="choice"><input type="radio" name="bathroom" value="private"> Private En-Suite (inside room)</label>
+            <label class="choice"><input type="radio" name="bathroom" value="shared"> Shared (max 2 adjacent rooms)</label>
+            <label class="choice"><input type="radio" name="bathroom" value="communal"> Communal wing corridor</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Amenities</legend>
+          <div class="amenities">
+            <label class="choice"><input type="checkbox" name="amenities" value="borehole"> Borehole and 10,000L tank</label>
+            <label class="choice"><input type="checkbox" name="amenities" value="solar"> Solar inverter / genset backup</label>
+            <label class="choice"><input type="checkbox" name="amenities" value="wifi"> High-speed WiFi (fiber / mesh)</label>
+            <label class="choice"><input type="checkbox" name="amenities" value="guard"> 24/7 security guard and guardhouse</label>
+            <label class="choice"><input type="checkbox" name="amenities" value="desk"> Study desk and lumbar chair</label>
+            <label class="choice"><input type="checkbox" name="amenities" value="wardrobe"> Lockable steel double wardrobe</label>
+            <label class="choice"><input type="checkbox" name="amenities" value="kitchen"> Shared gas stove and kitchenette</label>
+            <label class="choice"><input type="checkbox" name="amenities" value="entry"> Biometric / keypad smart entry</label>
+            <label class="choice"><input type="checkbox" name="amenities" value="fence"> All-around fence</label>
+            <label class="choice"><input type="checkbox" name="amenities" value="laundry"> Communal laundry basin area</label>
+            <label class="choice"><input type="checkbox" name="amenities" value="sanitation"> Twice-weekly hall sanitation</label>
+            <label class="choice"><input type="checkbox" name="amenities" value="ac"> Air conditioning system</label>
+          </div>
+        </fieldset>
+
+        <div class="drop-zone">
+          <div class="drop-icon" aria-hidden="true">i</div>
+          <h3>Drag and drop student photos here</h3>
+          <p>Supports JPEG and PNG up to 15MB each. Must include study desk, en-suite bathroom, power/water backup and security gate.</p>
+          <label for="photos" class="btn btn-primary">Choose files to upload</label>
+          <input type="file" id="photos" name="photos" accept="image/jpeg,image/png" multiple hidden>
+        </div>
+      </section>
+
+      <section class="panel verify">
+        <h2>3. Physical Verification Protocol</h2>
+        <p>An accredited Laws Campus Student Union Housing Officer will conduct a 10-minute on-site physical check before the room receives the permanent "Union Vetted" green ribbon. Photos uploaded above will be compared directly with actual room fixtures.</p>
+      </section>
+
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>4. Pricing, Semester Terms &amp; PayChangu Escrow</h2>
+            <p class="hint">Funds are safeguarded in collegiate escrow and disburse directly upon student check-in validation.</p>
+          </div>
+          <span class="badge">PayChangu Safe-Hold</span>
+        </div>
+
+        <div class="grid">
+          <div class="field">
+            <label for="rent">Monthly Rent (MWK) <span class="req">*</span></label>
+            <div class="money"><span>MWK</span><input type="text" id="rent" inputmode="numeric" value="65,000" required></div>
+            <p class="hint">Standard per-month student rate.</p>
+          </div>
+
+          <div class="field">
+            <div class="label-row">
+              <label for="deposit">Refundable Security Deposit <span class="req">*</span></label>
+              <button type="button" class="link-btn">Apply 1-Month Equivalent</button>
+            </div>
+            <div class="money"><span>MWK</span><input type="text" id="deposit" inputmode="numeric" value="65,000" required></div>
+            <p class="hint">Escrow-held during the semester and returned at final checkout.</p>
+          </div>
+
+          <div class="field">
+            <label for="period">Target Academic Period <span class="req">*</span></label>
+            <select id="period">
+              <option>Semester 2 (2024 / 2025 Academic Calendar)</option>
+              <option>Semester 1 (2024 / 2025 Academic Calendar)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <span class="label">Utilities Included in Base Price</span>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" checked> Water Included</label>
+              <label class="chip"><input type="checkbox" checked> Electricity (Solar Backup)</label>
+              <label class="chip"><input type="checkbox" checked> Wi-Fi Mesh</label>
+              <label class="chip"><input type="checkbox" checked> Room Cleaning</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="escrow">
+          <div class="panel-head">
+            <div>
+              <h3>Landlord PayChangu Escrow Disbursement Account</h3>
+              <p class="hint">Where you receive the room deposit and monthly rental funds once student physical check-in is logged.</p>
+            </div>
+            <span class="badge badge-green">Zero Transfer Fee</span>
+          </div>
+          <div class="grid">
+            <div class="field">
+              <label for="bank">Payout Channel / Bank <span class="req">*</span></label>
+              <select id="bank">
+                <option>Airtel Money (Malawi)</option>
+                <option>TNM Mpamba</option>
+                <option>National Bank of Malawi</option>
+                <option>Standard Bank</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="account">Registered Mobile Number / Account Number <span class="req">*</span></label>
+              <input type="tel" id="account" value="+265 991 428 901" required>
+            </div>
+          </div>
+          <p class="guarantee"><strong>PayChangu Safe-Hold Escrow Guarantee:</strong> Student holding deposits are securely frozen in the legal escrow account until you and the student jointly submit the digital check-in code at key handover.</p>
+        </div>
+      </section>
+
+    </form>
+  </main>
+
+</body>
+</html>

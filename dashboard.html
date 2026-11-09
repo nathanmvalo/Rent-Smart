@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landlord Dashboard | Rent Smart</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+
+  <header class="topbar">
+    <a href="#" class="logo">Rent Smart</a>
+    <nav class="nav">
+      <a href="#">Find Rooms</a>
+      <a href="#">How It Works</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#" class="active">Landlord Portal</a>
+    </nav>
+    <div class="user">
+      <span class="avatar">SK</span>
+      <span class="user-name">Symon Kuyama</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="page-head">
+      <div>
+        <h1>Landlord Dashboard</h1>
+        <p>Manage your student rooms, track escrow deposits and handle key handovers.</p>
+      </div>
+      <div class="actions">
+        <a href="upload.html" class="btn btn-primary">+ List New Accommodation</a>
+        <a href="#" class="btn btn-light">Export Report</a>
+      </div>
+    </section>
+
+    <!-- ===== SUMMARY CARDS ===== -->
+    <section class="cards">
+      <article class="card">
+        <p class="card-label">Managed Inventory</p>
+        <p class="card-value">8 <small>Units</small></p>
+        <p class="card-note">6 Reserved &bull; 2 Available</p>
+      </article>
+
+      <article class="card">
+        <p class="card-label">Escrow Held Revenue</p>
+        <p class="card-value">MWK 795k</p>
+        <p class="card-note">Locked in PayChangu escrow</p>
+      </article>
+
+      <article class="card">
+        <p class="card-label">Pending Key Handovers</p>
+        <p class="card-value">3 <small>Students</small></p>
+        <p class="card-note">Earliest move-in: 03 Jan 2025</p>
+      </article>
+
+      <article class="card">
+        <p class="card-label">Double Bookings</p>
+        <p class="card-value">0 <small>Conflicts</small></p>
+        <p class="card-note">All rooms verified</p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>My Rooms</h2>
+        <div class="filters">
+          <input type="text" placeholder="Search room, hostel or student...">
+          <select>
+            <option>All (8)</option>
+            <option>Available (2)</option>
+            <option>Reserved (5)</option>
+            <option>Under Maintenance (1)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Room</th>
+              <th>Type &amp; Distance</th>
+              <th>Monthly Rent</th>
+              <th>Status</th>
+              <th>Tenant</th>
+              <th>Escrow</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>St. Andrews Hostel</strong><br><span class="muted">Room 204, Block B</span></td>
+              <td>Executive En-suite<br><span class="muted">5 min to Lecture Hall 1</span></td>
+              <td>MWK 65,000</td>
+              <td><span class="badge reserved">Reserved</span></td>
+              <td>Tiyamike Chisale<br><span class="muted">CEN/01/36/23</span></td>
+              <td>MWK 132,500 held</td>
+              <td class="row-actions"><a href="#">View</a> <a href="#">Edit</a> <a href="#" class="danger">Delete</a></td>
+            </tr>
+            <tr>
+              <td><strong>St. Andrews Hostel</strong><br><span class="muted">Room 102, Ground Floor</span></td>
+              <td>Single Studio<br><span class="muted">5 min to Main Gate</span></td>
+              <td>MWK 55,000</td>
+              <td><span class="badge available">Available</span></td>
+              <td class="muted">None</td>
+              <td class="muted">Unlocked</td>
+              <td class="row-actions"><a href="#">View</a> <a href="#">Edit</a> <a href="#" class="danger">Delete</a></td>
+            </tr>
+            <tr>
+              <td><strong>Palm Court Chambers</strong><br><span class="muted">Unit 4B, Senior Wing</span></td>
+              <td>Premium 1-Bed Flat<br><span class="muted">8 min via shuttle</span></td>
+              <td>MWK 85,000</td>
+              <td><span class="badge reserved">Reserved</span></td>
+              <td>Diana Mwansa<br><span class="muted">CEN/01/22/24</span></td>
+              <td>MWK 170,000 held</td>
+              <td class="row-actions"><a href="#">View</a> <a href="#">Edit</a> <a href="#" class="danger">Delete</a></td>
+            </tr>
+            <tr>
+              <td><strong>Laws View Lodge</strong><br><span class="muted">Bed A, Room 3</span></td>
+              <td>Shared Double<br><span class="muted">3 min to Law Library</span></td>
+              <td>MWK 42,000</td>
+              <td><span class="badge available">Available</span></td>
+              <td class="muted">None</td>
+              <td class="muted">Unlocked</td>
+              <td class="row-actions"><a href="#">View</a> <a href="#">Edit</a> <a href="#" class="danger">Delete</a></td>
+            </tr>
+            <tr>
+              <td><strong>Laws View Lodge</strong><br><span class="muted">Bed B, Room 3</span></td>
+              <td>Shared Double<br><span class="muted">3 min to Law Library</span></td>
+              <td>MWK 42,000</td>
+              <td><span class="badge maintenance">Maintenance</span></td>
+              <td class="muted">None</td>
+              <td class="muted">Unlocked</td>
+              <td class="row-actions"><a href="#">View</a> <a href="#">Edit</a> <a href="#" class="danger">Delete</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="two-col">
+
+      <div class="panel">
+        <div class="panel-head"><h2>Upcoming Key Handovers</h2></div>
+        <ul class="list">
+          <li>
+            <span class="avatar small">TC</span>
+            <div><strong>Tiyamike Chisale</strong><br><span class="muted">St. Andrews, Room 204</span></div>
+            <span class="date">03 Jan 2025</span>
+          </li>
+          <li>
+            <span class="avatar small">DM</span>
+            <div><strong>Diana Mwansa</strong><br><span class="muted">Palm Court, Unit 4B</span></div>
+            <span class="date">05 Jan 2025</span>
+          </li>
+          <li>
+            <span class="avatar small">JB</span>
+            <div><strong>James Banda</strong><br><span class="muted">St. Andrews, Room 110</span></div>
+            <span class="date">07 Jan 2025</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2>How Escrow Works</h2></div>
+        <div class="notice">
+          <p>When a student pays a holding deposit through PayChangu, the room is locked as <strong>Reserved</strong> so nobody else can book it.</p>
+          <p>You receive your payout via Airtel Money only after the student shows the verification code at the hostel.</p>
+          <a href="#" class="btn btn-light">Contact Campus Housing Desk</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Rent Smart Collegiate Accommodation Network. All rights reserved.</p>
+    <p>Escrow Protected &bull; Laws Campus Official Partner</p>
+  </footer>
+
+</body>
+</html>
