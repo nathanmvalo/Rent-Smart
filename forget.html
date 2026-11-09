@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Forgot Password?</h2>
+    <p>Enter your registered phone number to receive an SMS code.</p>
+
+    <form>
+        <input type="tel" placeholder="Enter phone number" required>
+        <button type="button">Send SMS Code</button>
+
+        <p>Enter your 6-digit verification code</p>
+        <input type="text" placeholder="Enter SMS code"
+               maxlength="6" pattern="[0-9]{6}" required>
+
+        <button type="submit">Verify Code</button>
+    </form>
+</div>
+
+</body>
+</html>

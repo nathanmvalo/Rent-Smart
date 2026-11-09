@@ -1,0 +1,160 @@
+
+/* TRUST SECTION */
+.trust {
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.label {
+    color: #17365d;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.intro {
+    color: #666;
+}
+
+.trust-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trust-card {
+    background: #edf2ff;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1 1 250px;
+}
+
+.trust-card h3 {
+    color: #17365d;
+    font-size: 16px;
+}
+
+.trust-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.trust-card a {
+    color: #17365d;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.icon {
+    background: #dce6ff;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .trust {
+        margin: 30px auto;
+    }
+
+    .trust-card {
+        flex: 1 1 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #17365d;
+}
+
+.room, .container {
+    background: white;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+.room {
+    overflow: hidden;
+}
+
+.room img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.details, .container {
+    padding: 15px;
+}
+
+.container {
+    text-align: center;
+}
+
+.available {
+    color: green;
+    font-weight: bold;
+}
+
+.booked {
+    color: red;
+    font-weight: bold;
+}
+
+input, button {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+button {
+    background: #17365d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* PC VIEW */
+@media (min-width: 768px) {
+    .room {
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+        margin: 1%;
+    }
+}
+
+/* PHONE VIEW */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .room {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .room img {
+        height: 200px;
+    }
+
+    .container {
+        margin: 40px auto;
+    }
+}
