@@ -1,160 +1,370 @@
 
-/* TRUST SECTION */
-.trust {
-    margin: 50px auto;
-    max-width: 1200px;
+/* PROFILE PAGE */
+.profile-box {
+    background-color: #ffffff;
+    width: 500px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    margin: 20px auto;
 }
 
-.label {
-    color: #17365d;
-    font-size: 11px;
-    font-weight: bold;
+/* Profile Heading */
+.profile-box h2 {
+    color: #0756b3;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 8px;
 }
 
-.intro {
-    color: #666;
+.profile-box > p {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
 }
 
-.trust-cards {
+/* Profile Picture */
+.profile-picture {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    margin: 25px 0 15px;
 }
 
-.trust-card {
-    background: #edf2ff;
-    padding: 20px;
-    border-radius: 12px;
-    flex: 1 1 250px;
+.profile-picture img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid #0756b3;
+    object-fit: cover;
+    padding: 3px;
+    background-color: #eaf2ff;
 }
 
-.trust-card h3 {
-    color: #17365d;
-    font-size: 16px;
+/* Username */
+.username {
+    text-align: center;
+    color: #222;
+    font-size: 22px;
+    margin-bottom: 7px;
 }
 
-.trust-card p {
-    color: #555;
-    line-height: 1.5;
-}
-
-.trust-card a {
-    color: #17365d;
-    text-decoration: none;
-    font-size: 13px;
+.user-role {
+    text-align: center;
+    color: #0756b3;
+    font-size: 14px;
     font-weight: bold;
 }
 
-.icon {
-    background: #dce6ff;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 8px;
+/* Personal Information Section */
+.details {
+    margin-top: 30px;
 }
 
+.details h3 {
+    color: #0756b3;
+    font-size: 19px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #0756b3;
+    margin-bottom: 20px;
+}
+
+/* Information Fields */
+.info {
+    margin-bottom: 18px;
+}
+
+.info label {
+    display: block;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.info p {
+    background-color: #f1f6ff;
+    color: #333;
+    padding: 13px;
+    border: 1px solid #dce7f7;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+/* Profile Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Edit Button */
+.edit-btn {
+    background-color: #0756b3;
+}
+
+.edit-btn:hover {
+    background-color: #034080;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: #dc3545;
+}
+
+.logout-btn:hover {
+    background-color: #b02a37;
+}
+
+/* Mobile Responsive */
 @media (max-width: 600px) {
-    .trust {
-        margin: 30px auto;
+
+    .profile-box {
+        width: 100%;
+        padding: 22px;
+        margin: 10px auto;
     }
 
-    .trust-card {
-        flex: 1 1 100%;
+    .profile-box h2 {
+        font-size: 24px;
+    }
+
+    .profile-picture img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .buttons {
+        flex-direction: column;
     }
 }
 
+/* GENERAL STYLING */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #eaf2ff;
 }
 
-h2 {
-    text-align: center;
-    color: #17365d;
+/* NAVIGATION BAR */
+.navbar {
+    background-color: #0756b3;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.room, .container {
-    background: white;
-    max-width: 400px;
-    width: 100%;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px #ccc;
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
 }
 
-.room {
-    overflow: hidden;
-}
-
-.room img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-
-.details, .container {
-    padding: 15px;
-}
-
+/* MAIN CONTAINER */
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+/* ACCOUNT FORM */
+.form-box {
+    background-color: white;
+    width: 420px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-box h2,
+.profile-box h2 {
+    color: #0756b3;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-.available {
-    color: green;
+.form-box > p,
+.profile-box > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* FORM LABELS */
+form label {
+    display: block;
+    margin-bottom: 7px;
     font-weight: bold;
+    color: #333;
 }
 
-.booked {
-    color: red;
-    font-weight: bold;
-}
-
-input, button {
-    width: 90%;
+/* INPUT FIELDS */
+form input {
+    width: 100%;
     padding: 12px;
-    margin: 10px 0;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
 }
 
-button {
-    background: #17365d;
+form input:focus {
+    border-color: #0756b3;
+}
+
+/* ACCOUNT BUTTON */
+form button {
+    width: 100%;
+    padding: 13px;
+    background-color: #0756b3;
     color: white;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-/* PC VIEW */
-@media (min-width: 768px) {
-    .room {
-        display: inline-block;
-        vertical-align: top;
-        width: 30%;
-        margin: 1%;
-    }
+form button:hover {
+    background-color: #034080;
 }
 
-/* PHONE VIEW */
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
+/* LOGIN LINK */
+.login {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login a {
+    color: #0756b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PROFILE BOX */
+.profile-box {
+    background-color: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* PROFILE PICTURE */
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile-picture img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 4px solid #0756b3;
+    object-fit: cover;
+}
+
+/* USER DETAILS */
+.username {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.user-role {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.details {
+    margin-top: 30px;
+}
+
+.details h3 {
+    color: #0756b3;
+    border-bottom: 2px solid #0756b3;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.info {
+    margin-bottom: 18px;
+}
+
+.info label {
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+.info p {
+    color: #333;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f3f6fc;
+    border-radius: 5px;
+}
+
+/* PROFILE BUTTONS */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #0756b3;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 15px;
     }
 
-    .room {
+    .navbar a {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .form-box,
+    .profile-box {
         width: 100%;
-        margin: 15px auto;
-    }
-
-    .room img {
-        height: 200px;
-    }
-
-    .container {
-        margin: 40px auto;
+        padding: 20px;
     }
 }
